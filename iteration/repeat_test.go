@@ -3,7 +3,7 @@ package iteration
 import "testing"
 
 func BenchmarkRepeat(b *testing.B) {
-    for i := 0; i < b.N; i++ {
+    for i := 0; i < b.N; i++ { //https://golang.org/pkg/testing/#hdr-Benchmarks
         Repeat("a")
     }
 }
